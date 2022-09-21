@@ -1,0 +1,34 @@
+# Introduction
+
+Serialized Material  View dashboard provides the ability to view all the information happens on a Serialized Material .
+
+
+### How to get there?
+
+
+
+::: mermaid
+graph LR
+A("DASHBOARD")-->0("sERIALIZED MATERIAL VIEW")
+
+:::
+
+
+#### Selection Criteria
+
+
+
+<table class="confluenceTable"><colgroup><col /><col /></colgroup><tbody><tr><td class="highlight-grey confluenceTd" style="text-align: left;" data-highlight-colour="grey"><p><strong>Field</strong></p></td><td class="highlight-grey confluenceTd" style="text-align: left;" data-highlight-colour="grey"><p><strong>Description</strong></p></td></tr><tr><td style="text-align: left;" colspan="1" class="confluenceTd">Search By Serial Number</td><td style="text-align: left;" colspan="1" class="confluenceTd">Search box allows user to search exact/partial Serial Number</td></tr></tbody></table>
+
+
+
+#### **Report Fields** 
+
+
+
+<table class="confluenceTable"><colgroup><col /><col /></colgroup><tbody><tr><td style="text-align: center;" colspan="2" class="confluenceTd"><strong>General tab</strong></td></tr><tr><td class="highlight-grey confluenceTd" style="text-align: left;" data-highlight-colour="grey"><p><strong>Field</strong></p></td><td class="highlight-grey confluenceTd" style="text-align: left;" data-highlight-colour="grey"><p><strong>Description</strong></p></td></tr><tr><td style="text-align: left;" colspan="1" class="confluenceTd">Material</td><td style="text-align: left;" colspan="1" class="confluenceTd">The Material for the<span> Serial Number</span></td></tr><tr><td style="text-align: left;" colspan="1" class="confluenceTd">Material Description</td><td style="text-align: left;" colspan="1" class="confluenceTd">The Material Description for the Serial Number</td></tr><tr><td style="text-align: left;" colspan="1" class="confluenceTd">Product Family</td><td style="text-align: left;" colspan="1" class="confluenceTd">The Product Family for the<span> Serial Number</span></td></tr><tr><td style="text-align: left;" colspan="1" class="confluenceTd">Customer</td><td style="text-align: left;" colspan="1" class="confluenceTd">The Customer for the<span> Serial Number</span></td></tr><tr><td style="text-align: left;" colspan="1" class="confluenceTd">Division</td><td style="text-align: left;" colspan="1" class="confluenceTd">The Division for the<span> Serial Number</span></td></tr><tr><td style="text-align: left;" colspan="1" class="confluenceTd">Status</td><td style="text-align: left;" colspan="1" class="confluenceTd">The current status for the<span> </span><span>Serial Number</span></td></tr><tr><td style="text-align: left;" colspan="1" class="confluenceTd">Created On</td><td style="text-align: left;" colspan="1" class="confluenceTd">The date time where the<span> Serial Number</span><span> </span>is created</td></tr><tr><td style="text-align: left;" colspan="1" class="confluenceTd">Created By</td><td style="text-align: left;" colspan="1" class="confluenceTd"><span>The user ID who created this Serial Number</span></td></tr><tr><td style="text-align: left;" colspan="1" class="confluenceTd">Is On Hold</td><td style="text-align: left;" colspan="1" class="confluenceTd">To indicate if a Serial Number is placed on hold or not</td></tr><tr><td style="text-align: left;" colspan="1" class="confluenceTd">Is Scrapped</td><td style="text-align: left;" colspan="1" class="confluenceTd">To indicate if a Serial Number has been scrapped or not</td></tr><tr><td style="text-align: left;" colspan="1" class="confluenceTd">Is Reference Unit</td><td style="text-align: left;" colspan="1" class="confluenceTd">To indicate if a Serial Number is a Production/ Temporary/ Permanent reference unit or not. </td></tr><tr><td style="text-align: left;" colspan="1" class="confluenceTd">Return Count</td><td style="text-align: left;" colspan="1" class="confluenceTd"><p><span style="color: rgb(34,34,34);">The number of occurrence the Serial Number had gone through RMA Process</span></p></td></tr></tbody></table>
+
+<table class="confluenceTable"><colgroup><col /><col /></colgroup><tbody><tr><td style="text-align: center;" colspan="2" class="confluenceTd"><strong>Where Assembled</strong></td></tr><tr><td class="highlight-grey confluenceTd" style="text-align: left;" data-highlight-colour="grey"><p><strong>Field</strong></p></td><td class="highlight-grey confluenceTd" style="text-align: left;" data-highlight-colour="grey"><p><strong>Description</strong></p></td></tr><tr><td style="text-align: left;" colspan="1" class="confluenceTd">WIP</td><td style="text-align: left;" colspan="1" class="confluenceTd">The WIP Serial number that assembled with serialized material number. </td></tr><tr><td style="text-align: left;" colspan="1" class="confluenceTd">DateTime</td><td style="text-align: left;" colspan="1" class="confluenceTd">The DateTime where Assembled/Disassembled happen.</td></tr><tr><td style="text-align: left;" colspan="1" class="confluenceTd">Operator</td><td style="text-align: left;" colspan="1" class="confluenceTd">The user ID who assemble the serialized material.</td></tr><tr><td style="text-align: left;" colspan="1" class="confluenceTd">Type</td><td style="text-align: left;" colspan="1" class="confluenceTd">The event of assembled or disassembled.</td></tr><tr><td style="text-align: left;" colspan="1" class="confluenceTd">Route/Version/Route Step</td><td style="text-align: left;" colspan="1" class="confluenceTd">The Route/Version/Route Step where serialized material being Assembled/Disassembled.</td></tr><tr><td style="text-align: left;" colspan="1" class="confluenceTd">Resource</td><td style="text-align: left;" colspan="1" class="confluenceTd">The Resource where serialized material being Assembled/Disassembled.</td></tr></tbody></table>
+
+<table class="confluenceTable"><colgroup><col /><col /></colgroup><tbody><tr><td style="text-align: center;" colspan="2" class="confluenceTd"><strong>UPDs tab</strong></td></tr><tr><td class="highlight-grey confluenceTd" style="text-align: left;" data-highlight-colour="grey"><p><strong>Field</strong></p></td><td class="highlight-grey confluenceTd" style="text-align: left;" data-highlight-colour="grey"><p><strong>Description</strong></p></td></tr><tr><td style="text-align: left;" colspan="1" class="confluenceTd">Name</td><td style="text-align: left;" colspan="1" class="confluenceTd">The UPD Name configured to display during assembly</td></tr><tr><td style="text-align: left;" colspan="1" class="confluenceTd">Value </td><td style="text-align: left;" colspan="1" class="confluenceTd">The UPD Value assigned by the user or auto select from the list of UPD Values uploaded at Unique Product Data</td></tr><tr><td style="text-align: left;" colspan="1" class="confluenceTd">Type</td><td style="text-align: left;" colspan="1" class="confluenceTd">The UPD Type configured at Unique Product Data. Display "User Assigned" or "Auto Select From List"</td></tr></tbody></table>
+

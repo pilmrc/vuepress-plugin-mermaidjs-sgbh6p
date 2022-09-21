@@ -1,0 +1,13 @@
+:BEGIN
+"Method"	"ASME Y14.5-2009"
+"ProductName"	"M2695G-Housing-CNC4"
+"PN#"	"FO-Production Resource 1"
+"CAVITY"	""
+"SAMPLE"	"1"    
+"MeasuringDateTime"	"2020-09-3 13:12:51"
+"Inspector"	"2238483"
+"Machine"	"FO-Measuring Resource 4"
+"Temperature"	"20.2"
+"Humidity"	"58%RH"
+"1"	33.9881	4.0000	0.0100	-0.0100	-0.0119	0.0019
+:END

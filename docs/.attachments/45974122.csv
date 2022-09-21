@@ -1,0 +1,11 @@
+Container Number ,Attribute Name ,Attribute Value ,Action
+GG_BOX_201903290211,Container Attr 001,Modified Attr ,Update
+GG_BOX_201903290211,Container Attr 002,Need to be deleted by file,Delete
+GG_BOX_201903290211,Container Attr 003,Attr 002,ADD
+,Container Attr 004,Attr 003,ADD
+GG_BOX_201903290210,Container Attr 005,,ADD
+GG_BOX_201903290210,,Attr 003,Update
+GG_BOX_201903290210,Container Attr 003,Attr 002,Delete
+GG_BOX_201903290210,Container Attr 005,,ADD
+GG_BOX_201903290209,Container Attr 006,Attr 001,ADD
+GG_BOX_201903290209,Container Attr 007,Attr 002,ADD

@@ -1,0 +1,11 @@
+IsObsolete,CourseName,CourseRevision,Description,EffectivityDateInDays
+1,KKW_Course A1,2015,KKW Course A1 Test in SQA Environment,90
+0,KKW_Course A2,2015,KKW Course A2 Test in SQA Environment,90
+0,KKW_Course A3,2015,KKW Course A3 Test in SQA Environment,90
+0,KKW_Course A4,2015,KKW Course A4 Test in SQA Environment,90
+0,KKW_Course A,2015,KKW Course A Test in SQA Environment,90
+0,KKW_Course B1,2015,KKW Course B1 Test in SQA Environment,90
+0,KKW_Course B2,2015,KKW Course B2 Test in SQA Environment,90
+0,KKW_Course C,2015,KKW Course B1 Test in SQA Environment,90
+0,KKW_Course C1,2015,KKW Course B2 Test in SQA Environment,90
+0,KKW_Course C2,2016,KKW Course B2 Test in SQA Environment,90

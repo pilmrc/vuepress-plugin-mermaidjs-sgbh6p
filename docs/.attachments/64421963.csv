@@ -1,0 +1,2 @@
+User Login,Is Service Account,User Is Active,User Is In Domain,Keep Existing Group,Group Assignment,Keep Existing Customer,Customers Assignment
+jabil\100012345,FALSE,TRUE,TRUE,TRUE,DashBoard;KKW-TestGroup,TRUE,KKW-NotExitCustomer;KKW-DummyCust01

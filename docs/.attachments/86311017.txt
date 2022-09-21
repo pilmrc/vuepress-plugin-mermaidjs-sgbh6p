@@ -1,0 +1,25 @@
+:BEGIN
+Employee No.           :    911146
+Part No.               :    SMT123456A0
+Work Order No.         :    123456789
+Production Machine ID. :    GP15
+Cavity No.             :    1
+Sample No.             :    2
+StartDate              :    10-15-2020
+StartTime              :    08.43.14 AM
+Measurement Equipment  :    SmartScope1
+Trial Number           :    1
+SerialNumber           :    
+
+         Element          Actual         Nominal         Deviat.         Up Tol.        Low Tol.       Pass/Fail
+                                                        (TP Dev)        (TP Tol)                                
+Circle: Location-A(ID:5, From 6 Pts.) 
+     Diameter =          79.1725         79.1000          0.0725          0.2000         -0.1000            PASS
+
+Circle: Location-B(ID:6, From 5 Pts.) 
+     Diameter =          96.6781         96.5700          0.1081          0.3300          0.0000            PASS
+
+Circle: Location-C(ID:7, From 5 Pts.) 
+     Diameter =          95.6587         95.6000          0.0587          0.2500         -0.0500            PASS
+
+:END

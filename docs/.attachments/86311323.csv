@@ -1,0 +1,48 @@
+:BEGIN,
+Work Oder NO.,WuxiFATP202009240001
+Measure Time,9/24/2020 18:15
+Item NO.,1
+Station,PSA to  glass
+SN,A1CC01
+Config,AJ613-3347
+Production Machine ID,1#
+Sample,1
+Fixture ID,45
+Cavity,1
+Gauge ID,OG-023
+Emp ID,W2435
+FAI1,3.4639
+FAI2,4.9743
+:END,
+:BEGIN,
+Work Oder NO.,WuxiFATP202009240001
+Measure Time,9/24/2020 18:17
+Item NO.,2
+Station,PSA to  glass
+SN,A1CC02
+Config,AJ613-3347
+Production Machine ID,1#
+Sample,2
+Fixture ID,46
+Cavity,2
+Gauge ID,OG-023
+Emp ID,W2435
+FAI1,3.4639
+FAI2,4.9743
+:END,
+:BEGIN,
+Work Oder NO.,WuxiFATP202009240001
+Measure Time,9/24/2020 18:18
+Item NO.,3
+Station,PSA to  glass
+SN,A1CC03
+Config,AJ613-3347
+Production Machine ID,3#
+Sample,3
+Fixture ID,47
+Cavity,3
+Gauge ID,OG-023
+Emp ID,W2435
+FAI1,3.4639
+FAI2,4.9743
+:END,

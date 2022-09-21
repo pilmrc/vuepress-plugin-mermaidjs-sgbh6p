@@ -1,0 +1,39 @@
+:BEGIN         
+Employee No.           :    911146
+Part No.               :    PMT5803A1A
+Work Order No.         :    123456789
+Production Machine ID. :    GP15
+Cavity No.             :    1
+Sample No.             :    2
+StartDate              :    10-20-2020
+StartTime              :    03.38.24 PM
+Measurement Equipment  :    SmartScope1
+Trial Number           :    1
+SerialNumber           :   
+
+         Element          Actual         Nominal         Deviat.         Up Tol.        Low Tol.       Pass/Fail
+                                                        (TP Dev)        (TP Tol)                                
+Distance: Location-A(ID:7) between Point-5(ID:6) and Point-4(ID:5)
+           DX =          54.7134         54.6200          0.1076          0.1000         -0.1000            FAIL
+
+Distance: Location-B(ID:10) between Point-6(ID:9) and Line-1(ID:8)
+           LC =          76.9352         76.8700          0.0421          0.1000         -0.1000            PASS
+
+Distance: Location-C(ID:12) between Circle-1(ID:3) and Circle-3(ID:11)
+           DY =          42.1698         42.0800          0.0732          0.1000         -0.1000            PASS
+
+Distance: Location-D(ID:13) between Circle-3(ID:11) and Circle-2(ID:4)
+           DX =           9.1113          9.1000          0.0283          0.1000         -0.1000            PASS
+
+Distance: Location-E(ID:14) between Circle-1(ID:3) and Circle-3(ID:11)
+           DX =           9.0662          9.1000         -0.0207          0.1000         -0.1000            PASS
+
+Distance: Location-F(ID:17) between Line-2(ID:16) and Circle-4(ID:15)
+           LC =          67.6244         67.6000          0.0148          0.1000         -0.1000            PASS
+
+Distance: Location-G(ID:18) between Circle-4(ID:15) and Circle-3(ID:11)
+           DY =          54.2314         54.2200          0.0102          0.1000         -0.1000            PASS
+
+Distance: Location-H(ID:20) between Circle-4(ID:15) and Point-7(ID:19)
+           DY =          67.1573         67.1000          0.0501          0.1000         -0.1000            PASS
+:END

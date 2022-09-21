@@ -1,0 +1,14 @@
+[
+  {
+    "workOrderId": "AHSoftFactory01AHSoftMeasuringBuilding022020073100001",
+    "measuringEquipmentModel": "Eqp1",
+    "measuringUserName": "User1",
+    "measuringUserEmpId": "U1234",
+    "productionMachineId": "Prd1",
+    "cavityNumber": 1,
+    "sampleNumber": 1,
+    "measuringDateTime": "08/12/2020 10:04:00",
+    "dimensionCode": "GU1",
+    "measuredData": 22.05
+  }
+]

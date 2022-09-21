@@ -1,0 +1,66 @@
+[
+  {
+    "workOrderId": "swab_20191112swab_flMsrBuild01Memphis_TN0105",
+    "measuringEquipmentModel": "swab_flmsr_RS1B",
+    "measuringUserName": "swagata",
+    "measuringUserEmpId": "7678",
+    "trialNumber": 0,
+    "config": "1",
+    "measurementMachineValues": [
+      {
+        "productionMachineId": "1",
+        "moldId": 1,
+        "inspectionMeasurementMachineCavityValues": [
+          {
+            "cavityNumber": 1,
+            "inspectionMeasurementMachineSampleValues": [
+              {
+                "sampleNumber": 2,
+                "serialNumber": "string",
+                "measuringDateTime": "11/10/2019 11:00",
+                "inspectionMeasurementMachineDataValues": [
+                  {
+                    "dimensionCode": "1A",
+                    "measuredData": 25
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+{
+    "workOrderId": "swab_20191107swab_flMsrBuild 01Memphis_TN0101",
+    "measuringEquipmentModel": "swab_flmsr_RS1A",
+    "measuringUserName": "swagata",
+    "measuringUserEmpId": "7678",
+    "trialNumber": 2,
+    "config": "1",
+    "measurementMachineValues": [
+      {
+        "productionMachineId": "2",
+        "moldId": 2,
+        "inspectionMeasurementMachineCavityValues": [
+          {
+            "cavityNumber": 2,
+            "inspectionMeasurementMachineSampleValues": [
+              {
+                "sampleNumber": 1,
+                "serialNumber": "string",
+                "measuringDateTime": "11/10/2019 11:00",
+                "inspectionMeasurementMachineDataValues": [
+                  {
+                    "dimensionCode": "1A",
+                    "measuredData": 20
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

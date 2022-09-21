@@ -1,0 +1,128 @@
+:BEGIN
+Starting_time 2020/11/30 10:39:43
+Process TP     
+SN FM7048604SLN4J6AT+HCM     
+Config 120     
+Machine_number 1     
+Sample_number 1     
+Fixture_No 1     
+Point_No 1     
+Measuring_machine_number OGP_01     
+Name_of_surveyor Jun_Xiao     
+Measure_labor_number 951797     
+Trial_Number      
+FAI23       +0.0861       +0.0000      +0.1200      -0.0000       +0.0861 
+E1-(A1+J1)/2       +0.0458       +0.0000      +0.1000      -0.1000       +0.0458 
+E7-(A7+J7)/2       +0.0226       +0.0000      +0.0800      -0.1000       +0.0226 
+End_time 2020/11/30 10:44:06
+:END
+:BEGIN
+Starting_time 2020/11/30 10:49:52
+Process TP
+     
+SN FM7048701QSN4J6AV+CCM     
+Config 120     
+Machine_number 1     
+Sample_number 2     
+Fixture_No 1     
+Point_No 1     
+Measuring_machine_number OGP_01
+     
+Name_of_surveyor Jun_Xiao
+     
+Measure_labor_number 951797
+     
+Trial_Number      
+FAI23       +0.0721       +0.0000      +0.1200      -0.0000       +0.0721 
+E1-(A1+J1)/2       +0.0429       +0.0000      +0.1000      -0.1000       +0.0429 
+E7-(A7+J7)/2       +0.0107       +0.0000      +0.0800      -0.1000       +0.0107 
+End_time 2020/11/30 10:52:06
+:END
+:BEGIN
+Starting_time 2020/11/30 11:12:52
+Process TP
+     
+SN FM7048701FJN4J6AW+CCM     
+Config 120     
+Machine_number 1     
+Sample_number 3     
+Fixture_No 1     
+Point_No 1     
+Measuring_machine_number OGP_01
+     
+Name_of_surveyor Jun_Xiao
+     
+Measure_labor_number 951797
+     
+Trial_Number      
+FAI23       +0.0402       +0.0000      +0.1200      -0.0000       +0.0402 
+E1-(A1+J1)/2       +0.0055       +0.0000      +0.1000      -0.1000       +0.0055 
+E7-(A7+J7)/2       -0.0178       +0.0000      +0.0800      -0.1000       -0.0178 
+End_time 2020/11/30 11:15:07
+:END
+:BEGIN
+Starting_time 2020/11/30 11:15:34
+Process TP
+     
+SN FM7048606WGN4J7AG+CCM     
+Config 121     
+Machine_number 1     
+Sample_number 4     
+Fixture_No 1     
+Point_No 1     
+Measuring_machine_number OGP_01
+     
+Name_of_surveyor Jun_Xiao
+     
+Measure_labor_number 951797
+     
+Trial_Number      
+FAI23       +0.0493       +0.0000      +0.1200      -0.0000       +0.0493 
+E1-(A1+J1)/2       +0.0219       +0.0000      +0.1000      -0.1000       +0.0219 
+E7-(A7+J7)/2       -0.0008       +0.0000      +0.0800      -0.1000       -0.0008 
+End_time 2020/11/30 11:17:33
+:END
+:BEGIN
+Starting_time 2020/11/30 11:21:00
+Process TP
+     
+SN FM704850ACWN4J7AK+CCM     
+Config 121     
+Machine_number 1     
+Sample_number 5     
+Fixture_No 1     
+Point_No 1     
+Measuring_machine_number OGP_01
+     
+Name_of_surveyor Jun_Xiao
+     
+Measure_labor_number 951797
+     
+Trial_Number      
+FAI23       +0.0308       +0.0000      +0.1200      -0.0000       +0.0308 
+E1-(A1+J1)/2       +0.0129       +0.0000      +0.1000      -0.1000       +0.0129 
+E7-(A7+J7)/2       +0.0063       +0.0000      +0.0800      -0.1000       +0.0063 
+End_time 2020/11/30 11:23:02
+:END
+:BEGIN
+Starting_time 2020/11/30 11:25:48
+Process TP
+     
+SN FM7048504W3N4J7AY+YCM     
+Config 121     
+Machine_number 1     
+Sample_number 6     
+Fixture_No 1     
+Point_No 1     
+Measuring_machine_number OGP_01
+     
+Name_of_surveyor Jun_Xiao
+     
+Measure_labor_number 951797
+     
+Trial_Number      
+FAI23       +0.0782       +0.0000      +0.1200      -0.0000       +0.0782 
+E1-(A1+J1)/2       +0.0427       +0.0000      +0.1000      -0.1000       +0.0427 
+E7-(A7+J7)/2       +0.0029       +0.0000      +0.0800      -0.1000       +0.0029 
+End_time 2020/11/30 11:28:04
+:END

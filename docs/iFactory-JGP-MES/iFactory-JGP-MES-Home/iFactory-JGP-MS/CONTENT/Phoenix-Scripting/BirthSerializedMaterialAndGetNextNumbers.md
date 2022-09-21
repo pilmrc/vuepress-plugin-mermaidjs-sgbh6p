@@ -1,0 +1,17 @@
+# Introduction
+
+**Usage:** 
+($Errors, $TestStatus) = BirthSerializedMaterialAndGetNextNumbers ($MaterialName, $PlantCode, $Quantity, $DimmModule, $DimmSize, $DimmManufacturer, $ManufacturerCode);
+
+
+**Description:** **This will be used, exclusively for now, to create customized DIMM serialized material serial numbers.** 
+
+<table class="confluenceTable"><tbody><tr><th colspan="3" class="confluenceTh"><span style="color: rgb(0,0,255);">Function Arguments</span></th></tr><tr><td class="confluenceTd"><strong>Parameter</strong></td><td class="confluenceTd"><p style="text-align: center;"><strong>Variable</strong><br /><strong>Type</strong></p></td><td class="confluenceTd"><strong>Description</strong></td></tr><tr><td class="confluenceTd"><p>$MaterialName</p></td><td style="text-align: center;" class="confluenceTd"><p align="center">String</p></td><td class="confluenceTd"><p> </p></td></tr><tr><td colspan="1" class="confluenceTd"><p>$PlantCode</p></td><td colspan="1" style="text-align: center;" class="confluenceTd"><p align="center">String</p></td><td colspan="1" class="confluenceTd"><p>The SAP Plantcode for this material</p></td></tr><tr><td colspan="1" class="confluenceTd"><p>$Quantity</p></td><td colspan="1" style="text-align: center;" class="confluenceTd"><p align="center">Int</p></td><td colspan="1" class="confluenceTd"><p>How many unique serials to generate</p></td></tr><tr><td colspan="1" class="confluenceTd"><p>$DimmModule</p></td><td colspan="1" class="confluenceTd"><p align="center">String</p></td><td colspan="1" class="confluenceTd"><p>Identifier (D) is what we use for Isilon Dimms (from Isilon Dimm worksheet)</p></td></tr><tr><td colspan="1" class="confluenceTd"><p>$DimmSize</p></td><td colspan="1" class="confluenceTd"><p align="center">String</p></td><td colspan="1" class="confluenceTd"><p>The customized Dimm Size<span> (from Isilon Dimm worksheet)</span></p></td></tr><tr><td colspan="1" class="confluenceTd"><p>$DimmManufacturer</p></td><td colspan="1" class="confluenceTd"><p align="center">String</p></td><td colspan="1" class="confluenceTd"><p>Who Manufactured the Dimm<span> (from Isilon Dimm worksheet)</span></p></td></tr><tr><td colspan="1" class="confluenceTd"><span>$ManufacturerCode</span></td><td colspan="1" class="confluenceTd"><span>String</span></td><td colspan="1" class="confluenceTd"><span>Unique ID for Manufacturer of Serialized Material<span> (from Isilon Dimm worksheet)</span></span></td></tr></tbody></table>
+
+
+<table class="confluenceTable"><tbody><tr><th colspan="3" class="confluenceTh"><span style="color: rgb(0,0,255);">Return Parameters</span></th></tr><tr><td class="confluenceTd"><strong>Parameter</strong></td><td class="confluenceTd"><p style="text-align: center;"><strong>Variable</strong><br /><strong>Type</strong></p></td><td class="confluenceTd"><strong>Description</strong></td></tr><tr><td class="confluenceTd"><p>$Errors</p></td><td style="text-align: center;" class="confluenceTd"><p align="center"><strong>String</strong></p></td><td class="confluenceTd"><p>The return error description</p></td></tr><tr><td colspan="1" class="confluenceTd"><p>$SerialNumbers</p></td><td colspan="1" class="confluenceTd"><p>Array []</p></td><td colspan="1" class="confluenceTd"><p>They quantity of serial numbers you requested</p></td></tr></tbody></table>
+
+
+**Usage Example(s):** 
+($Errors, $SerialNumbers) = BirthSerializedMaterialAndGetNextNumbers (“007-0003-01”, “TN01”, 99, “D”, “02”, “Micron”, “30”);
+

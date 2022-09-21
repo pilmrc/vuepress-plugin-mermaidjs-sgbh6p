@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rmaRequest xmlns="http://jabil.com/ngMES/RMA/Import">
+  <customerRef>customerRef1</customerRef>
+  <requestType>RETURN</requestType>
+  <customerName>customerName1</customerName>
+  <divisionName>divisionName1</divisionName>
+  <siteName>siteName1</siteName>
+  <customerContact>
+    <contactName>contactName1</contactName>
+    <contactEmail>contactEmail1</contactEmail>
+  </customerContact>
+  <customerAddress>
+    <addressLine1>addressLine11</addressLine1>
+    <addressCity>addressCity1</addressCity>
+    <addressPostalCode>addressPostalCode1</addressPostalCode>
+    <addressCountryCode>AF</addressCountryCode>
+  </customerAddress>
+  <jabilContact>
+    <contactName>contactName1</contactName>
+    <contactEmail>contactEmail1</contactEmail>
+  </jabilContact>
+  <jabilAddress>
+    <addressLine1>addressLine11</addressLine1>
+    <addressCity>addressCity1</addressCity>
+    <addressPostalCode>addressPostalCode1</addressPostalCode>
+    <addressCountryCode>AF</addressCountryCode>
+  </jabilAddress>
+  <comment>comment1</comment>
+  <assemblyGroup>
+    <assembly>assembly1</assembly>
+    <assemblyRevision>assemblyRevision1</assemblyRevision>
+    <upgradeAssembly>upgradeAssembly1</upgradeAssembly>
+    <upgradeAssemblyRevision>upgradeAssemblyRevision1</upgradeAssemblyRevision>
+    <responsibility>UNKNOWN</responsibility>
+    <customerProductName>customerProductName1</customerProductName>
+    <customerDefect>customerDefect1</customerDefect>
+    <inWarranty>true</inWarranty>
+    <failure failureCategory="failureCategory1" failureSymptom="failureSymptom1" />
+    <failure failureCategory="failureCategory2" failureSymptom="failureSymptom2" />
+    <failure failureCategory="failureCategory3" failureSymptom="failureSymptom3" />
+    <requestItem>
+      <serialNumber>serialNumber1</serialNumber>
+      <comment>comment1</comment>
+    </requestItem>
+    <requestItem>
+      <serialNumber>serialNumber2</serialNumber>
+      <comment>comment2</comment>
+    </requestItem>
+    <requestItem>
+      <serialNumber>serialNumber3</serialNumber>
+      <comment>comment3</comment>
+    </requestItem>
+  </assemblyGroup>
+  <assemblyGroup>
+    <assembly>assembly2</assembly>
+    <assemblyRevision>assemblyRevision2</assemblyRevision>
+    <upgradeAssembly>upgradeAssembly2</upgradeAssembly>
+    <upgradeAssemblyRevision>upgradeAssemblyRevision2</upgradeAssemblyRevision>
+    <responsibility>JABIL</responsibility>
+    <customerProductName>customerProductName2</customerProductName>
+    <customerDefect>customerDefect2</customerDefect>
+    <inWarranty>false</inWarranty>
+    <failure failureCategory="failureCategory4" failureSymptom="failureSymptom4" />
+    <failure failureCategory="failureCategory5" failureSymptom="failureSymptom5" />
+    <failure failureCategory="failureCategory6" failureSymptom="failureSymptom6" />
+    <requestItem>
+      <serialNumber>serialNumber4</serialNumber>
+      <comment>comment4</comment>
+    </requestItem>
+    <requestItem>
+      <serialNumber>serialNumber5</serialNumber>
+      <comment>comment5</comment>
+    </requestItem>
+    <requestItem>
+      <serialNumber>serialNumber6</serialNumber>
+      <comment>comment6</comment>
+    </requestItem>
+  </assemblyGroup>
+  <assemblyGroup>
+    <assembly>assembly3</assembly>
+    <assemblyRevision>assemblyRevision3</assemblyRevision>
+    <upgradeAssembly>upgradeAssembly3</upgradeAssembly>
+    <upgradeAssemblyRevision>upgradeAssemblyRevision3</upgradeAssemblyRevision>
+    <responsibility>CUSTOMER</responsibility>
+    <customerProductName>customerProductName3</customerProductName>
+    <customerDefect>customerDefect3</customerDefect>
+    <inWarranty>true</inWarranty>
+    <failure failureCategory="failureCategory7" failureSymptom="failureSymptom7" />
+    <failure failureCategory="failureCategory8" failureSymptom="failureSymptom8" />
+    <failure failureCategory="failureCategory9" failureSymptom="failureSymptom9" />
+    <requestItem>
+      <serialNumber>serialNumber7</serialNumber>
+      <comment>comment7</comment>
+    </requestItem>
+    <requestItem>
+      <serialNumber>serialNumber8</serialNumber>
+      <comment>comment8</comment>
+    </requestItem>
+    <requestItem>
+      <serialNumber>serialNumber9</serialNumber>
+      <comment>comment9</comment>
+    </requestItem>
+  </assemblyGroup>
+</rmaRequest>

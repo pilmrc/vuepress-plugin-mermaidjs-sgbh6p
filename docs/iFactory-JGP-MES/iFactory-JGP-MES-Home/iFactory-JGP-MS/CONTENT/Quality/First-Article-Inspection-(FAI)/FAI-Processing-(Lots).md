@@ -1,0 +1,19 @@
+# Introduction
+
+When a FAI Event has been triggered and is in progress, any release of product via the 
+[Lot Release](iFactory-JGP-MES/iFactory-JGP-MES-Home/iFactory-JGP-MS/CONTENT/Quality/First-Article-Inspection-(FAI)/FAI-Processing-(Lots).md)screen to the same route the event was triggered for will be associated to the event.If a 
+[Sample Plan](iFactory-JGP-MES/iFactory-JGP-MES-Home/iFactory-JGP-MS/CONTENT/Quality/First-Article-Inspection-(FAI)/FAI-Processing-(Lots).md)exists for the material and route step that also has FAI configured the sample plan will be overridden while the FAI event is in progress for a applicable route step in the [Lot Inspection](iFactory-JGP-MES/iFactory-JGP-MES-Home/iFactory-JGP-MS/CONTENT/Quality/First-Article-Inspection-(FAI)/FAI-Processing-(Lots).md)screen.  This means that the full lot release quantity will be required to be inspected for lots until the FAI event has been completed.Please note that only the Lot Inspection screen is supported currently for FAI inspection for lot processing at this time.
+When the FAI event is in progress for a step this will be indicated by an 'i' (informational) symbol next to the 'Sample Size Quantity' field label.  Hovering over this symbol will show the text "Sample Size Quantity may be adjusted due to an in progress FAI Event".
+
+
+Once the FAI event has been completed successfully, the sample plan will take effect.
+The FAI Event will have a status of ‘In Progress’ until the FAI Quantity has been fulfilled at the FAI route step associated to the FAI Event.  When a lot associated to an in progress FAI Event arrives at a FAI route step (as indicated by the FAI Configuration of the triggered FAI Event), it will be used to determine the status of the FAI event and count towards the FAI Quantity.
+The FAI Quantity is fulfilled by passing lots at the FAI route step until the FAI Quantity is achieved.  When the FAI Quantity has been achieved the FAI Event status will be marked as ‘Complete’ and the event will have a result of ‘Passed’.  The user that entered the lot that passed the FAI Event will receive a success message. 
+
+
+If a lot fails at any time while the FAI Event is in progress the FAI Event will be marked as ‘Complete’ and the event will have a result of 'Failed'.  The user that entered the lot that failed the FAI Event will receive a message indicating that the FAI Event (and all lots associated to it) has been placed on hold.  Additionally, the planned orders used to release the lots associated to the failed FAI event will be placed on hold.  This hold can only be released by releasing the FAI event and cannot be done using the 
+[Planned Order Hold](iFactory-JGP-MES/iFactory-JGP-MES-Home/iFactory-JGP-MS/CONTENT/Quality/First-Article-Inspection-(FAI)/FAI-Processing-(Lots).md)or [Lot Hold](iFactory-JGP-MES/iFactory-JGP-MES-Home/iFactory-JGP-MS/CONTENT/Quality/First-Article-Inspection-(FAI)/FAI-Processing-(Lots).md)screens in the Batch Production module.  The status for the planned order in the [Planned Order](/iFactory-JGP-MES/iFactory-JGP-MES-Home/iFactory-JGP-MS/CONTENT/Data-Importer/Planned-Order-Data-Importer.md)Maintenance screen (in JEMS Web) is not updated and has no bearing on whether the planned order can be used to release lots in the Lot Release screen in the Batch Production module.
+
+When the FAI Event closes with a result of ‘Fail’ a new FAI Event will be automatically triggered with the same scope (material, route, and route step).  All lots associated to the failed FAI Event will not be allowed to start any process and will be blocked.  Any lot that already started its process will be allowed to complete that process and will be blocked subsequently.
+Additionally, the planned orders associated to the lots in the failed FAI Event will not be allowed to be used to release any units while the FAI hold is in effect.
+

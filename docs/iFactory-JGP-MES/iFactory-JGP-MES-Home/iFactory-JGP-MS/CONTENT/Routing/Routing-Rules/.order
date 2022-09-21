@@ -1,0 +1,14 @@
+Default-Pass-and-Fail-(Lot-%2D-Batch-Build).md
+Basic-Random-Sampling.md
+Default-Pass-and-Fail.md
+Return-Enqueued-Step-Last-Pass.md
+Return-To-Last-Failed-Step-Rule.md
+Route-by-Defect.md
+Route-By-External-API-Call-Result.md
+Route-By-Failure.md
+Route-By-Material.md
+Route-by-Mismatched-WIP-Attribute.md
+Route-by-Production-Order-Attribute.md
+Route-by-Sampling.md
+Route-by-Subcomponent.md
+Route-By-WIP-Attribute.md

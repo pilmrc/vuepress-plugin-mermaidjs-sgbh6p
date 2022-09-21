@@ -1,0 +1,2 @@
+User Login,User Name,User Email,User Is Active,User Is In Domain,Keep Existing Group,Group Assignment ,Keep Existing Customer,Customers Assignment 
+Jabil\100012345,TestDt1,TestUser@jabil.com,TRUE,TRUE,TRUE,ADMIN;Admin 2,TRUE,JK-CTU-CUST01;JK-CTU-CUST02

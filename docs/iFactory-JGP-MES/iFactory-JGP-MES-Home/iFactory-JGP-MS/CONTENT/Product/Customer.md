@@ -1,0 +1,143 @@
+# Introduction
+
+A Customer is a company that employs Jabil to design and manufacture products for them. As Jabil has many customers, it is crucial for its shop floor system to segregate product manufacturing by customers while keeping the manufacturing data and processes independent from each other. Some of Jabil's customers are Cisco, HP, Agilent, Isilon, NetApp and many more. 
+
+How to get there?
+
+
+
+::: mermaid
+graph LR
+A("ADMINISTRATION")-->0("CUSTOMER")
+
+:::
+
+
+### Screen Activity
+
+
+Customer Maintenance enables user to perform the following activity:
+
+- Create, view, update and delete customer
+
+- Configure specific customer requirements for Serial Number, Inventory ID and Batch
+
+- Configure specific customer requirement for Handling Unit trigger point
+
+- Configure the email IDs against which MSD related alert mails to be sent by the system
+
+
+
+#### Screen Dependency
+
+
+Most screens in shop floor system has dependencies to Customer. Modification on Customer that is active and already running in production is highly not advisable. 
+
+
+
+#### Customer Maintenance - General Tab
+
+
+![image2019-6-24_14-57-41.png](/.attachments/51872009.png)
+
+
+
+
+#### Fields
+
+
+
+<table class="relative-table wrapped confluenceTable" style="width: 100.0%;"><colgroup><col style="width: 10.9223%;" /><col style="width: 89.0916%;" /></colgroup><tbody><tr><td style="text-align: center;width: 99.9452%;" colspan="2" class="confluenceTd"><strong>General Tab*</strong></td></tr><tr><td class="highlight-grey confluenceTd" style="width: 10.9161%;" data-highlight-colour="grey"><p><strong>Field</strong></p></td><td class="highlight-grey confluenceTd" style="width: 89.0291%;" data-highlight-colour="grey"><p><strong>Description</strong></p></td></tr><tr><td style="width: 10.9161%;" class="confluenceTd"><p>Customer Name</p></td><td style="width: 89.0291%;" class="confluenceTd"><p>The unique name given to the customer</p></td></tr><tr><td style="width: 10.9161%;" class="confluenceTd"><p>Description</p></td><td style="width: 89.0291%;" class="confluenceTd"><p>Additional description for the customer can be entered in this field</p></td></tr><tr><td style="width: 10.9161%;" class="confluenceTd"><p>Global Customer ID</p></td><td style="width: 89.0291%;" class="confluenceTd"><p>Unique identifier for each customer</p></td></tr><tr><td style="width: 10.9161%;" class="confluenceTd">Generate Global Customer ID</td><td style="width: 89.0291%;" class="confluenceTd"><span style="color: rgb(0,0,0);">Auto generate the unique global customer ID for the new customer. Formula = Global Site ID * 1000 + incremental value for the customer</span></td></tr><tr><td style="width: 10.9161%;" class="confluenceTd">Status</td><td style="width: 89.0291%;" class="confluenceTd"><p>A customer can be in one of the three statuses below</p><ul><li>Active (available and ready to use in production)</li><li>Inactive (not available to use in production. this option is used when Jabil no longer produces product for the customer)</li><li>New <span style="color: rgb(255,0,0);"><span style="color: rgb(0,0,0);">(Set status as new during initial configuration. Customer is not ready for production use yet.</span><span style="color: rgb(0,0,0);"> Once the customer is set to "Active" or "Inactive", system will not allow the administrator to set back to "New")</span> </span></li></ul></td></tr><tr><td style="width: 10.9161%;" class="confluenceTd">Image</td><td style="width: 89.0291%;" class="confluenceTd">The customer logo image file. The image is displayed on the shop floor system's main page for customer selection.</td></tr><tr><td style="text-align: center;width: 99.9452%;" colspan="2" class="confluenceTd"><strong>Customer Partner Tab</strong></td></tr><tr><td class="highlight-grey confluenceTd" style="width: 10.9161%;" data-highlight-colour="grey"><p><strong>Field</strong></p></td><td class="highlight-grey confluenceTd" style="width: 89.0291%;" data-highlight-colour="grey"><p><strong>Description</strong></p></td></tr><tr><td style="width: 10.9161%;" class="confluenceTd">Partner Number</td><td style="width: 89.0291%;" class="confluenceTd"><p>Allows user to associate SAP's partner number(s) with shop floor defined customer. Partner number will be included in the Customer Order message from SAP to shop floor. Based on the partner number and the partner number/shop floor customer association done here, shop floor system will be able to identify customer for the order. A customer can have multiple partner numbers but a partner number can be associated to a single customer. In the Customer Order screen, the partner number is displayed in the <span style="font-size: 10.0pt;line-height: 13.0pt;background-color: transparent;">"Bill To Contact > Part Number" field.</span></p></td></tr><tr><td style="text-align: center;width: 99.9452%;" colspan="2" class="confluenceTd"><strong>Configuration Options Tab*</strong></td></tr><tr><td class="highlight-grey confluenceTd" style="width: 10.9161%;" data-highlight-colour="grey"><p><strong>Field</strong></p></td><td class="highlight-grey confluenceTd" style="width: 89.0291%;" data-highlight-colour="grey"><p><strong>Description</strong></p></td></tr><tr><td style="width: 10.9161%;" class="confluenceTd">Serial Number Constraint</td><td style="width: 89.0291%;" class="confluenceTd"><p>Depending on customer Serial Number requirement, there are two types of serial number constraint</p><ul><li>Unique by Customer - Every Serial Numbers for the selected Customer will be unique</li><li>Unique by Material - Serial Numbers are unique by Material under this Customer. <br />Example: In Cisco, Assembly-A & Assembly-B can have the same Serial Number </li></ul></td></tr><tr><td style="width: 10.9161%;" class="confluenceTd">Expand All turn on</td><td style="width: 89.0291%;" class="confluenceTd">Expand each of the panels</td></tr><tr><td style="width: 10.9161%;" class="confluenceTd">Expand All turn off</td><td style="width: 89.0291%;" class="confluenceTd">Collapse all of the panels</td></tr><tr><td style="width: 10.9161%;" class="confluenceTd">Re-evaluate Inqueue WIP by Routing Rule Change</td><td style="width: 89.0291%;" class="confluenceTd"><p>If Enabled - Re-evaluate affected in queue WIPs upon saving route base on the changes on routing rule.<br />If Disabled – Default value. No re-evaluate action on the in queue WIPs upon saving route with routing rule change. </p>(For more details, please refer to Routing Rules wiki.)</td></tr><tr><td style="width: 10.9161%;" class="confluenceTd"><span style="color: rgb(45,46,47);">Allow Packed WIP to Reserialize</span></td><td style="width: 89.0291%;" class="confluenceTd">If enabled, <span style="color: rgb(34,34,34);">user is able to <a href="http://usplnd0wiki01:8090/pages/viewpage.action?pageId=31392860" rel="nofollow">re-serialize WIP</a> that has already been packed into a container f<span style="color: rgb(34,34,34);">or WIP with Material Release Type = "Assigned Serial Number".</span></span></td></tr><tr><td style="width: 10.9161%;" class="confluenceTd">Restrict Reserialized WIP SN to Release</td><td style="width: 89.0291%;" class="confluenceTd">If enabled, User is not allowed to release or re-serialize the Original Serial number which has been re-serialized to other serial number. e,g, abc001 has been re-serialized to abc002, so the abc001 should not allow to be released in the WIP Release or re-serialize in the WIP Reserialization screen. This is only applicable to the WIP Material Release Type = “Assigned Serial Number”.</td></tr><tr><td style="width: 10.9161%;" class="confluenceTd">Auto Batch</td><td style="width: 89.0291%;" class="confluenceTd"><p>Auto Batch is used during WIP Release. With this option enabled, operator is able to release WIP without an existing Batch. In WIP Release screen, after the operator clicks the "Generate WIP" button, shop floor system <span>will auto generate a new Batch Number and displays the Batch Number to the operator. </span></p></td></tr><tr><td style="width: 10.9161%;" class="confluenceTd">Batch Next Number</td><td style="width: 89.0291%;" class="confluenceTd"><p>If Auto Batch is enabled, this field becomes a required field. The Next Number configured here will determine the format of the auto-generated Batch Number. <br />If Auto Batch is disabled, this field is also disabled  </p></td></tr><tr><td style="width: 10.9161%;" class="confluenceTd">Batch Validation Mask</td><td style="width: 89.0291%;" class="confluenceTd"><p>If Auto Batch is enabled, this field becomes disabled<br />If Auto Batch is disabled, this field is activated (optional field). The <a href="Customer-29919368.html">Batch Maintenance</a> screen shall validate against the mask when the user creates a new Batch Number there.</p></td></tr><tr><td style="width: 10.9161%;" class="confluenceTd">Order Processing Mode</td><td style="width: 89.0291%;" class="confluenceTd">Currently only Delivery Process Mode is available. System is expected to process delivery orders from SAP</td></tr><tr><td style="width: 10.9161%;" class="confluenceTd">Enforce OBA Audit</td><td style="width: 89.0291%;" class="confluenceTd"><p>All delivery orders received from SAP when the flag is enabled shall require Delivery Audit</p>All delivery orders received from SAP when the flag is disabled shall not require Delivery Audit</td></tr><tr><td style="width: 10.9161%;" class="confluenceTd">Sampling Percentage</td><td style="width: 89.0291%;" class="confluenceTd">The sampling rate to audit delivery orders</td></tr><tr><td colspan="1" class="confluenceTd">Planned Order Backflush</td><td colspan="1" class="confluenceTd">If enabled, when a WIP from planned order is completed, a planned order backflush message is generated sending the components consumed to SAP<br />If disabled, no auto-backflush when the planned order WIP is completed</td></tr><tr><td style="width: 10.9161%;" class="confluenceTd">QLMS Next Number</td><td style="width: 89.0291%;" class="confluenceTd"><p>This is an optional search engine (with partial / full search) where user can search and select 'QLMS Work Order' type next number. This option lies in 'Other' section. The configuration is to <span style="color: rgb(0,0,0);">utilize the QLMS next number for work order ID generation.</span></p></td></tr><tr><td colspan="1" class="confluenceTd"><span style="color: rgb(45,46,47);">Allow Assembly Progression By Parser</span></td><td colspan="1" class="confluenceTd">Turn on this option to allow Parser Service to process the Assembly Progression (Progression/Conversion/Upgrade). Assembly Number, Revision, Version in the Parser file are optional if this option is turned off and no Assembly Progression is configured. This option is available if the Serial number Constraint is "Unique by Customer". Parser Service is allowed for progression to the same route only.</td></tr><tr><td style="text-align: center;width: 99.9452%;" colspan="2" class="confluenceTd"><strong>Division Option Tab</strong></td></tr><tr><td class="highlight-grey confluenceTd" style="width: 10.9161%;" data-highlight-colour="grey"><p><strong>Field</strong></p></td><td class="highlight-grey confluenceTd" style="width: 89.0291%;" data-highlight-colour="grey"><p><strong>Description</strong></p></td></tr><tr><td style="width: 10.9161%;text-align: left;" class="confluenceTd"><p>Customer/Division</p></td><td style="width: 89.0291%;text-align: left;" class="confluenceTd"><p>It is the customer/division that will be affected by the configuration. Leave blank by default.</p></td></tr><tr><td style="text-align: left;width: 10.9161%;" class="confluenceTd"><p>Is Slot Scan Required</p></td><td style="text-align: left;width: 89.0291%;" class="confluenceTd"><p>It is forcing to scan the slot (Module ID and TrackID) when the part is allocated in<span> </span><a style="text-decoration: none;" href="http://usplnd0wiki01:8090/display/IJM/Equipment+Part+Allocation" rel="nofollow">Equipment Part Allocation</a><span> </span>screen</p><p>When OFF the system is not asking to scan the slot, but take the slot directly from<span> </span><a style="text-decoration: none;" href="http://usplnd0wiki01:8090/display/IJM/Equipment+Setup+Sheet" rel="nofollow">Equipment Setup Sheet</a><span> </span>configuration</p><p>When ON the system force to scan the slot that must reflect the setup sheet configuration. This is a check to be sure the user is putting the feeder/GRN in the correct slot.</p></td></tr><tr><td style="text-align: left;width: 10.9161%;" class="confluenceTd"><p>Is AutoTransport GRN Removal</p></td><td style="text-align: left;width: 89.0291%;" class="confluenceTd"><p>It is the key to configure the auto removal functionality in part allocation.</p><p>When OFF the system will alert with duplicate value when same feeder/GRN appears in two different location.</p><p>When ON the tool doesn't provide any alert, but will automatically remove the Feeder/GRN from old location and put it in the new location.</p><p>This setting is not checked when the setup sheet with the feeder/GRN scanned is already installed. In that case the behavior is always like key OFF.</p></td></tr><tr><td colspan="1" class="confluenceTd">Enforce GRN for Serialized Material</td><td colspan="1" class="confluenceTd">This to enforce the user to fill up the GRN during the part allocation if it is turn ON whereas the GRN is not required during part allocation. By default the option will set to "YES".</td></tr><tr><td style="text-align: left;width: 10.9161%;" class="confluenceTd">TSM/MSD Alert Threshold</td><td style="text-align: left;width: 89.0291%;" class="confluenceTd"><p>It is the time (in minutes) used to provide the alert before the MSD component expires or the<span> </span><a href="http://usplnd0wiki01:8090/pages/viewpage.action?pageId=29919154" style="text-decoration: none;" rel="nofollow">Bake Process</a><span> </span>Maximum Bake Time is reached (when configured). Default Value: 30 mins</p><p>For example, if the MSD Component has 2 hrs as Maximum Exposure Time, an alert appears (by default) at GRN scanning when the part stays out of the bag for 1h30m</p><p>If the Maximum Bake Time is 4 hours and 20 minutes, a notification will be sent after 3h50m saying that the part will complete the bake process in 30 mins</p></td></tr><tr><td colspan="1" class="confluenceTd"><span>Is Qty Scan Required</span></td><td colspan="1" class="confluenceTd"><span>By default is ON, means user require to provide qty valu during SV scan after GRN. Switch to off will skip qty entry in SV.</span></td></tr><tr><td colspan="1" class="confluenceTd"><span>Is Module Slot Combo</span></td><td colspan="1" class="confluenceTd"><span>By default is OFF, means that user require to provide Module value first then follow by slot durig SV scan. Switch to ON will allow user to combine both module slot as 1 value. The last 2 digits represent slot, any digit before last 2 digit represent module (e.g. 201 means module 2 slot 1)</span></td></tr><tr><td colspan="1" class="confluenceTd"><span>Default As Critical Equipment Setup Sheet</span></td><td colspan="1" class="confluenceTd"><span>By default it will set as ON, new equipment setup sheet will default to show Is Critical SetupSheet toggle as ON.</span><p style="text-align: left;">If set to OFF, new equipment setup sheet will default to show Is Critical SetupSheet toggle as OFF</p></td></tr><tr><td colspan="1" class="confluenceTd">GRN Document</td><td colspan="1" class="confluenceTd"><p>It is the division level GRN Document. Leave blank by default. </p><p>The priority is lower than material level GRN Document which means system will using material level GRN Document value to print GRN Label if both division level and material level GRN Document has value. </p></td></tr><tr><td style="text-align: left;width: 10.9161%;" class="confluenceTd">Field Retain Time Limit (seconds)</td><td style="text-align: left;width: 89.0291%;" class="confluenceTd"><p>To control each focus field can retain for how long, exceed the configured limit user should re-enter start from beginning of the entry on the screen. Value 0 means no control, value > 0 will activate this limit control. Available screens:</p><ul><li>Open Non MSD GRN Box</li><li>Split GRN</li></ul></td></tr><tr><td colspan="1" class="confluenceTd">Email Configuration Type</td><td colspan="1" class="confluenceTd"><p>To configure the Email IDs against which person will receive the mails according to the category provided under this field:</p><ul><li>MSD Expiry Warning</li><li>MSD Expiry Confirmation</li><li>MSD Overbake Alert</li></ul></td></tr><tr><td colspan="1" class="confluenceTd">Email IDs</td><td colspan="1" class="confluenceTd">The field is hidden until user selects a Email Configuration Type above. This field allows user to enter multiple available Jabil Email IDs, save it. USer also can delete and add the Email IDs anytime.</td></tr><tr><td colspan="1" class="confluenceTd">Is Barcode Validation Required</td><td colspan="1" class="confluenceTd"><p>To control whether barcode verification is required for the following pages</p><ul><li>Open Non MSD GRN Box</li><li>Split GRN - Auto Create New GRN</li><li>GRN Storage Manager - Open Bag</li></ul></td></tr><tr><td colspan="1" class="confluenceTd"><span style="color: rgb(45,46,47);">Moisture Classification Mismatch Notification</span></td><td colspan="1" class="confluenceTd">To configure the Email IDs against which person will receive the mails when moisture classification did not match during material synchronization</td></tr><tr><td style="text-align: center;width: 99.9452%;" colspan="2" class="confluenceTd"><strong>Handling Unit Tab</strong></td></tr><tr><td class="highlight-grey confluenceTd" style="width: 10.9161%;" data-highlight-colour="grey"><p><strong>Field</strong></p></td><td class="highlight-grey confluenceTd" style="width: 89.0291%;" data-highlight-colour="grey"><p><strong>Description</strong></p></td></tr><tr><td style="width: 10.9161%;" class="confluenceTd">Route & Route Version</td><td style="width: 89.0291%;" class="confluenceTd"><p>* Shall be obsolete as this is only used for Delivery Orders*<br /><span style="font-size: 10.0pt;line-height: 13.0pt;background-color: transparent;">The Route and Route Version where Handling Unit will be sent to SAP.</span></p></td></tr><tr><td style="width: 10.9161%;" class="confluenceTd">Route Step</td><td style="width: 89.0291%;" class="confluenceTd"><p><span>* Shall be obsolete as this is only used for Delivery Orders*<br /></span><span style="font-size: 10.0pt;line-height: 13.0pt;background-color: transparent;">The Route Step where Handling Unit will be sent to SAP</span></p></td></tr></tbody></table>
+
+**Auto generate the unique global customer ID for the new customer. Formula = Global Site ID \* 1000 + incremental value for the customer** 
+StatusA customer can be in one of the three statuses below
+
+- Active (available and ready to use in production)
+
+- Inactive (not available to use in production. this option is used when Jabil no longer produces product for the customer)
+
+- New
+(Set status as new during initial configuration. Customer is not ready for production use yet.
+Once the customer is set to "Active" or "Inactive", system will not allow the administrator to set back to "New")
+ImageThe customer logo image file. The image is displayed on the shop floor system's main page for customer selection.**Customer Partner Tab** **Field** 
+**Description** 
+Partner NumberAllows user to associate SAP's partner number(s) with shop floor defined customer. Partner number will be included in the Customer Order message from SAP to shop floor. Based on the partner number and the partner number/shop floor customer association done here, shop floor system will be able to identify customer for the order. A customer can have multiple partner numbers but a partner number can be associated to a single customer. In the Customer Order screen, the partner number is displayed in the 
+"Bill To Contact " Part Number" field.
+**Configuration Options Tab\*** **Field** 
+**Description** 
+Serial Number ConstraintDepending on customer Serial Number requirement, there are two types of serial number constraint
+
+- Unique by Customer - Every Serial Numbers for the selected Customer will be unique
+
+- Unique by Material - Serial Numbers are unique by Material under this Customer.
+
+Example: In Cisco, Assembly_A & Assembly_B can have the same Serial Number Expand All turn onExpand each of the panelsExpand All turn offCollapse all of the panelsRe-evaluate Inqueue WIP by Routing Rule ChangeIf Enabled - Re-evaluate affected in queue WIPs upon saving route base on the changes on routing rule.
+
+If Disabled – Default value. No re-evaluate action on the in queue WIPs upon saving route with routing rule change. (For more details, please refer to Routing Rules wiki.)Allow Packed WIP to Reserialize
+If enabled, user is able to 
+[re-serialize WIP](iFactory-JGP-MES/iFactory-JGP-MES-Home/iFactory-JGP-MS/CONTENT/Product/Customer.md)that has already been packed into a container for WIP with Material Release Type = "Assigned Serial Number".
+Restrict Reserialized WIP SN to ReleaseIf enabled, User is not allowed to release or re-serialize the Original Serial number which has been re-serialized to other serial number. e,g, abc001 has been re-serialized to abc002, so the abc001 should not allow to be released in the WIP Release or re-serialize in the WIP Reserialization screen. This is only applicable to the WIP Material Release Type = “Assigned Serial Number”.Auto BatchAuto Batch is used during WIP Release. With this option enabled, operator is able to release WIP without an existing Batch. In WIP Release screen, after the operator clicks the "Generate WIP" button, shop floor system 
+will auto generate a new Batch Number and displays the Batch Number to the operator. Batch Next NumberIf Auto Batch is enabled, this field becomes a required field. The Next Number configured here will determine the format of the auto-generated Batch Number. 
+
+If Auto Batch is disabled, this field is also disabled  Batch Validation MaskIf Auto Batch is enabled, this field becomes disabled
+
+If Auto Batch is disabled, this field is activated (optional field). The [Batch Maintenance](/iFactory-JGP-MES/iFactory-JGP-MES-Home/iFactory-JGP-MS/CONTENT/Product/Customer.md)screen shall validate against the mask when the user creates a new Batch Number there.Order Processing ModeCurrently only Delivery Process Mode is available. System is expected to process delivery orders from SAPEnforce OBA AuditAll delivery orders received from SAP when the flag is enabled shall require Delivery Audit
+All delivery orders received from SAP when the flag is disabled shall not require Delivery AuditSampling PercentageThe sampling rate to audit delivery ordersPlanned Order BackflushIf enabled, when a WIP from planned order is completed, a planned order backflush message is generated sending the components consumed to SAP
+If disabled, no auto-backflush when the planned order WIP is completedQLMS Next NumberThis is an optional search engine (with partial / full search) where user can search and select 'QLMS Work Order' type next number. This option lies in 'Other' section. The configuration is to 
+utilize the QLMS next number for work order ID generation.
+Allow Assembly Progression By Parser
+Turn on this option to allow Parser Service to process the Assembly Progression (Progression/Conversion/Upgrade). Assembly Number, Revision, Version in the Parser file are optional if this option is turned off and no Assembly Progression is configured. This option is available if the Serial number Constraint is "Unique by Customer". Parser Service is allowed for progression to the same route only.**Division Option Tab** **Field** 
+**Description** 
+Customer/Division
+It is the customer/division that will be affected by the configuration. Leave blank by default.
+Is Slot Scan Required
+It is forcing to scan the slot (Module ID and TrackID) when the part is allocated in
+[Equipment Part Allocation](/iFactory-JGP-MES/iFactory-JGP-MES-Home/iFactory-JGP-MS/CONTENT/Part-Allocation/Equipment-Part-Allocation.md)screenWhen OFF the system is not asking to scan the slot, but take the slot directly from
+[Equipment Setup Sheet](/iFactory-JGP-MES/iFactory-JGP-MES-Home/iFactory-JGP-MS/CONTENT/Data-Importer/Equipment-Setup-Sheet-Data-Importer.md)configurationWhen ON the system force to scan the slot that must reflect the setup sheet configuration. This is a check to be sure the user is putting the feeder/GRN in the correct slot.
+Is AutoTransport GRN Removal
+It is the key to configure the auto removal functionality in part allocation.
+When OFF the system will alert with duplicate value when same feeder/GRN appears in two different location.
+When ON the tool doesn't provide any alert, but will automatically remove the Feeder/GRN from old location and put it in the new location.
+This setting is not checked when the setup sheet with the feeder/GRN scanned is already installed. In that case the behavior is always like key OFF.
+Enforce GRN for Serialized MaterialThis to enforce the user to fill up the GRN during the part allocation if it is turn ON whereas the GRN is not required during part allocation. By default the option will set to "YES".TSM/MSD Alert ThresholdIt is the time (in minutes) used to provide the alert before the MSD component expires or the
+[Bake Process](iFactory-JGP-MES/iFactory-JGP-MES-Home/iFactory-JGP-MS/CONTENT/Product/Customer.md)Maximum Bake Time is reached (when configured). Default Value: 30 minsFor example, if the MSD Component has 2 hrs as Maximum Exposure Time, an alert appears (by default) at GRN scanning when the part stays out of the bag for 1h30m
+If the Maximum Bake Time is 4 hours and 20 minutes, a notification will be sent after 3h50m saying that the part will complete the bake process in 30 mins
+Is Qty Scan RequiredBy default is ON, means user require to provide qty valu during SV scan after GRN. Switch to off will skip qty entry in SV.Is Module Slot ComboBy default is OFF, means that user require to provide Module value first then follow by slot durig SV scan. Switch to ON will allow user to combine both module slot as 1 value. The last 2 digits represent slot, any digit before last 2 digit represent module (e.g. 201 means module 2 slot 1)Default As Critical Equipment Setup SheetBy default it will set as ON, new equipment setup sheet will default to show Is Critical SetupSheet toggle as ON.If set to OFF, new equipment setup sheet will default to show Is Critical SetupSheet toggle as OFF
+GRN DocumentIt is the division level GRN Document. Leave blank by default. 
+The priority is lower than material level GRN Document which means system will using material level GRN Document value to print GRN Label if both division level and material level GRN Document has value. 
+Field Retain Time Limit (seconds)To control each focus field can retain for how long, exceed the configured limit user should re-enter start from beginning of the entry on the screen. Value 0 means no control, value " 0 will activate this limit control. Available screens:
+
+- Open Non MSD GRN Box
+
+- Split GRN
+Email Configuration TypeTo configure the Email IDs against which person will receive the mails according to the category provided under this field:
+
+- MSD Expiry Warning
+
+- MSD Expiry Confirmation
+
+- MSD Overbake Alert
+Email IDsThe field is hidden until user selects a Email Configuration Type above. This field allows user to enter multiple available Jabil Email IDs, save it. USer also can delete and add the Email IDs anytime.Is Barcode Validation RequiredTo control whether barcode verification is required for the following pages
+
+- Open Non MSD GRN Box
+
+- Split GRN - Auto Create New GRN
+
+- GRN Storage Manager - Open Bag
+Moisture Classification Mismatch Notification
+To configure the Email IDs against which person will receive the mails when moisture classification did not match during material synchronization**Handling Unit Tab** **Field** 
+**Description** 
+Route & Route Version\* Shall be obsolete as this is only used for Delivery Orders\*
+
+The Route and Route Version where Handling Unit will be sent to SAP.
+Route Step\* Shall be obsolete as this is only used for Delivery Orders\*
+
+The Route Step where Handling Unit will be sent to SAP
+
+
+#### Attachments
+
+[worddavb7ff3e1d60e9b9d19c2e24ad2a78c2ec.png](/.attachments/29919369.png)
+[image2018-12-10_13-17-22.png](/.attachments/39649288.png)
+[image2019-6-24_14-57-41.png](/.attachments/51872009.png)
+

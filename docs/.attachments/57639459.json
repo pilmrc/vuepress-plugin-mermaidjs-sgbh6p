@@ -1,0 +1,34 @@
+[
+  {
+    "workOrderId": "AL-Factory-Gala-Gala2-01F",
+    "measuringEquipmentModel": "MEMISL061",
+    "measuringUserName": "Siman Frank",
+    "measuringUserEmpId": "2323123",
+    "trialNumber": 3,
+    "config": "Packing",
+    "measurementMachineValues": [
+      {
+        "productionMachineId": "2",
+        "moldId": 2,
+        "inspectionMeasurementMachineCavityValues": [
+          {
+            "cavityNumber": 1,
+            "inspectionMeasurementMachineSampleValues": [
+              {
+                "sampleNumber": 1,
+                "serialNumber": "serial1",
+                "measuringDateTime": "8/20/2019 5:23:34",
+                "inspectionMeasurementMachineDataValues": [
+                  {
+                    "dimensionCode": "DCode11",
+                    "measuredData": 5.344
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

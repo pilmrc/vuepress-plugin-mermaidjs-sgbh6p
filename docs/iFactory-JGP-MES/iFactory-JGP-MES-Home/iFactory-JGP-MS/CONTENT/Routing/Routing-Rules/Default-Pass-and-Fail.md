@@ -1,0 +1,4 @@
+# Introduction
+
+This is the default routing rule that is provided by the system for every route step. If no other routing rule is configured in that step, then the Default Pass Rule and Default Fail Rule will be used by the system for WIP routing. In order for the routing to properly occur, t
+he administrator is required to configure the Destination Operation for the Default Pass Rule and Default Fail Rule. If there is no other routing rule configured at the step, the Default Pass Rule will be executed when the WIP completes at the route step without any failure or defect. If there is a failure or defect on WIP completion, then the Default Fail Rule will be executed. The WIP will be routed according to the Destination Operation configured at the respective Routing Rule. 

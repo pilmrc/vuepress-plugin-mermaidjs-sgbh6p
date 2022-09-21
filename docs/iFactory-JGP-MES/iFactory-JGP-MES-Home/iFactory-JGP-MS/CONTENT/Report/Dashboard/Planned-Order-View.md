@@ -1,0 +1,29 @@
+# Introduction
+
+
+The Planned Order View dashboard allows user to see the up-to-date progress for the selected planned order. The dashboard displays an overview of the planned order from its released quantity until its packed quantity. All Serial Numbers for this planned order are listed at the bottom. User will be able to see the current status and route step for each Serial Numbers as well.
+
+
+
+### How to get there?
+
+
+
+
+
+
+::: mermaid
+graph LR
+A("DASHBOARD")-->0("PLANNED ORDER VIEW")
+
+:::
+
+
+#### Fields
+
+
+
+<table class="confluenceTable"><tbody><tr><td colspan="2" class="confluenceTd"><h5 style="text-align: center;" id="PlannedOrderView-DashboardHeader">Dashboard Header</h5></td></tr><tr><td class="highlight confluenceTd"><p><strong>Field</strong></p></td><td class="highlight confluenceTd"><p><strong>Description</strong></p></td></tr><tr><td colspan="1" class="confluenceTd">Planned Order</td><td colspan="1" class="confluenceTd">Select the planned order to view its details</td></tr><tr><td class="confluenceTd"><p><span style="color: rgb(0,0,0);">Material</span></p></td><td class="confluenceTd"><p>The material for the planned order. <br />Click on the material to open the Material View screen containing all the data configured for the material in <a href="Material-29919417.html">Material Maintenance</a> screen</p></td></tr><tr><td class="confluenceTd"><p><span style="color: rgb(0,0,0);">Bill of Material</span></p></td><td class="confluenceTd"><p><span>The BOM for the planned order. <br /><span>Click on the BOM to open the BOM View screen containing all the data configured for the BOM in <a href="29919358.html">BOM Maintenance</a></span><span> screen</span> </span></p></td></tr><tr><td class="confluenceTd"><p><span style="color: rgb(0,0,0);">Status</span></p></td><td class="confluenceTd"><p><span>The current status for the planned order</span></p></td></tr><tr><td colspan="1" class="confluenceTd"><span style="color: rgb(0,0,0);">Schedule Start Date</span></td><td colspan="1" class="confluenceTd"><span>The scheduled start date for the planned order</span></td></tr><tr><td colspan="1" class="confluenceTd"><span style="color: rgb(0,0,0);">Schedule End Date</span></td><td colspan="1" class="confluenceTd"><span>The scheduled end date for the planned order</span></td></tr><tr><td colspan="1" class="confluenceTd"><span style="color: rgb(0,0,0);">Actual Start Date</span></td><td colspan="1" class="confluenceTd"><span>The actual date where the planned order started in production</span></td></tr><tr><td colspan="1" class="confluenceTd"><span style="color: rgb(0,0,0);">Actual End Date</span></td><td colspan="1" class="confluenceTd"><span>The actual date where the planned order completed in production</span></td></tr><tr><td colspan="1" class="confluenceTd"><span style="color: rgb(0,0,0);">Created Date</span></td><td colspan="1" class="confluenceTd"><p>The date where the planned order is created</p></td></tr><tr><td colspan="1" class="confluenceTd"><span style="color: rgb(0,0,0);">Order Qty</span></td><td colspan="1" class="confluenceTd"><span>The WIP quantity to produce for this planned order</span></td></tr><tr><td colspan="1" class="confluenceTd"><span style="color: rgb(0,0,0);">Released Qty</span></td><td colspan="1" class="confluenceTd">The WIP quantity released for this planned order</td></tr><tr><td colspan="1" class="confluenceTd"><span style="color: rgb(0,0,0);">Remaining Qty</span></td><td colspan="1" class="confluenceTd">The remaining WIP quantity that is yet to release for this planned order</td></tr><tr><td colspan="1" class="confluenceTd"><span style="color: rgb(0,0,0);">In Process Qty</span></td><td colspan="1" class="confluenceTd">The WIP quantity that is in process in production floor</td></tr><tr><td colspan="1" class="confluenceTd"><span style="color: rgb(0,0,0);">Completed Qty</span></td><td colspan="1" class="confluenceTd">The WIP quantity that has a "Completed" status</td></tr><tr><td colspan="1" class="confluenceTd"><span style="color: rgb(0,0,0);">Scrapped Qty</span></td><td colspan="1" class="confluenceTd">The WIP quantity that has a "Scrapped" status</td></tr><tr><td colspan="1" class="confluenceTd"><span style="color: rgb(0,0,0);">Packed Qty</span></td><td colspan="1" class="confluenceTd">The WIP quantity that has a "Packed" status</td></tr><tr><td colspan="1" class="confluenceTd"><span style="color: rgb(0,0,0);">Created By</span></td><td colspan="1" class="confluenceTd">The user ID who created this planned order</td></tr><tr><td colspan="2" class="confluenceTd"><h5 style="text-align: center;" id="PlannedOrderView-WIPAssigned">WIP Assigned</h5></td></tr><tr><td class="highlight confluenceTd" colspan="1">Field</td><td class="highlight confluenceTd" colspan="1">Description</td></tr><tr><td colspan="1" class="confluenceTd">Serial Number</td><td colspan="1" class="confluenceTd">The Serial Number assigned to the Planned Order. <span>Click on the Serial Number to open the <a href="WIP-View-29919857.html">WIP View dashboard</a>.</span></td></tr><tr><td colspan="1" class="confluenceTd">Batch</td><td colspan="1" class="confluenceTd">The batch containing the corresponding Serial Number</td></tr><tr><td colspan="1" class="confluenceTd">Status</td><td colspan="1" class="confluenceTd"><span>The corresponding Serial Number's status</span></td></tr><tr><td colspan="1" class="confluenceTd">Route</td><td colspan="1" class="confluenceTd"><span>The corresponding Serial Number's current route</span></td></tr><tr><td colspan="1" class="confluenceTd"><span style="color: rgb(51,51,51);"><a href="http://usplnd0wiki01:8090/" title="Click here to sort" rel="nofollow"><span style="color: rgb(51,51,51);">Last Completed Route Step</span></a></span></td><td colspan="1" class="confluenceTd"><span>The corresponding Serial Number's last completed route step</span></td></tr></tbody></table>
+
+
+

@@ -1,0 +1,11 @@
+ContainerNumber,AttributeName,AttributeValue,Action,Result
+GG_BOX_201903290209,Container Attr 006,Attr 001,ADD,Record added successfully.
+GG_BOX_201903290209,Container Attr 007,Attr 002,ADD,Record added successfully.
+GG_BOX_201903290210,Container Attr 003,Attr 002,Delete,No attribute exists with name: Container Attr 003 for container: GG_BOX_201903290210
+GG_BOX_201903290210,Container Attr 005,,ADD,One or more column's value is missing from the csv file or the Action column has a value other than Add/Update/Delete.
+GG_BOX_201903290210,,Attr 003,Update,One or more column's value is missing from the csv file or the Action column has a value other than Add/Update/Delete.
+GG_BOX_201903290210,Container Attr 005,,ADD,One or more column's value is missing from the csv file or the Action column has a value other than Add/Update/Delete.
+GG_BOX_201903290211,Container Attr 003,Attr 002,ADD,An attribute already exists with name: Container Attr 003 for container: GG_BOX_201903290211
+GG_BOX_201903290211,Container Attr 002,Need to be deleted by file,Delete,No attribute exists with name: Container Attr 002 for container: GG_BOX_201903290211
+GG_BOX_201903290211,Container Attr 001,Modified Attr ,Update,Record updated successfully.
+,Container Attr 004,Attr 003,ADD,One or more column's value is missing from the csv file or the Action column has a value other than Add/Update/Delete.
